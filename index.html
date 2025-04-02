@@ -7,37 +7,56 @@
     <meta name="description" content="Explore the ancient streets of Rome in Roma Game, an immersive historical simulator that lets you experience life in the Roman Empire.">
     <link rel="canonical" href="https://romagame.net">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R44HJ350V4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-R44HJ350V4');
+    </script>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #121212;
+            color: #E0E0E0;
         }
         
-        /* Apple-inspired colors */
-        .bg-apple-blue {
-            background-color: #0071E3;
+        /* Dark theme colors */
+        .bg-dark-primary {
+            background-color: #121212;
         }
-        .bg-apple-gray {
-            background-color: #F5F5F7;
+        .bg-dark-secondary {
+            background-color: #1E1E1E;
         }
-        .text-apple-blue {
-            color: #0071E3;
+        .bg-dark-elevated {
+            background-color: #2C2C2E;
         }
-        .text-apple-darkgray {
-            color: #86868B;
+        .bg-dark-blue {
+            background-color: #0A84FF;
         }
-        .text-apple-black {
-            color: #1D1D1F;
+        .text-dark-primary {
+            color: #E0E0E0;
         }
-        .hover\:bg-apple-blue:hover {
-            background-color: #0062C3;
+        .text-dark-secondary {
+            color: #AEAEB2;
         }
-        .hover\:text-apple-blue:hover {
-            color: #0071E3;
+        .text-dark-blue {
+            color: #0A84FF;
+        }
+        .border-dark {
+            border-color: #383838;
+        }
+        .hover\:bg-dark-blue-hover:hover {
+            background-color: #007AFF;
+        }
+        .hover\:text-dark-blue:hover {
+            color: #0A84FF;
         }
         
         /* Gradient background */
-        .bg-apple-gradient {
-            background-image: linear-gradient(to right, #FFFFFF, #F5F5F7);
+        .bg-dark-gradient {
+            background-image: linear-gradient(to right, #121212, #1E1E1E);
         }
         
         /* Custom max-width */
@@ -46,20 +65,20 @@
         }
     </style>
 </head>
-<body class="bg-apple-gray text-apple-black">
+<body class="bg-dark-primary text-dark-primary">
     <!-- Header -->
-    <header class="w-full bg-white shadow-sm sticky top-0 z-10">
+    <header class="w-full bg-dark-secondary shadow-md sticky top-0 z-10 border-b border-dark">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="/" class="text-2xl font-bold text-apple-blue">Roma Game</a>
+            <a href="/" class="text-2xl font-bold text-dark-blue">Roma Game</a>
             <nav class="hidden md:block">
                 <ul class="flex space-x-6">
-                    <li><a href="#about" class="hover:text-apple-blue transition-colors duration-300">About</a></li>
-                    <li><a href="#gameplay" class="hover:text-apple-blue transition-colors duration-300">Gameplay</a></li>
-                    <li><a href="#features" class="hover:text-apple-blue transition-colors duration-300">Features</a></li>
+                    <li><a href="#about" class="text-dark-primary hover:text-dark-blue transition-colors duration-300">About</a></li>
+                    <li><a href="#gameplay" class="text-dark-primary hover:text-dark-blue transition-colors duration-300">Gameplay</a></li>
+                    <li><a href="#features" class="text-dark-primary hover:text-dark-blue transition-colors duration-300">Features</a></li>
                 </ul>
             </nav>
             <button class="md:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-dark-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
             </button>
@@ -67,20 +86,20 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="py-12 md:py-20 bg-apple-gradient">
+    <section class="py-12 md:py-20 bg-dark-gradient">
         <div class="container mx-auto px-4">
             <div class="max-w-3xl mx-auto text-center mb-12">
                 <h1 class="text-4xl md:text-5xl font-bold mb-4">Experience Ancient Rome in Roma Game</h1>
-                <p class="text-xl text-apple-darkgray">Walk the streets of the mighty Roman Empire in this immersive historical simulator.</p>
+                <p class="text-xl text-dark-secondary">Walk the streets of the mighty Roman Empire in this immersive historical simulator.</p>
                 <div class="mt-8">
-                    <a href="#play" class="inline-block bg-apple-blue text-white px-6 py-3 rounded-lg font-medium hover:bg-apple-blue transition-colors duration-300">Play Now</a>
+                    <a href="#play" class="inline-block bg-dark-blue text-white px-6 py-3 rounded-lg font-medium hover:bg-dark-blue-hover transition-colors duration-300">Play Now</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Game Section -->
-    <section id="play" class="py-12 bg-white">
+    <section id="play" class="py-12 bg-dark-secondary">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-8">Play Roma Game</h2>
             <div class="w-full max-w-8xl mx-auto bg-black rounded-lg overflow-hidden shadow-lg" style="height: 80vh;">
@@ -90,7 +109,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-12 md:py-16 bg-apple-gray">
+    <section id="about" class="py-12 md:py-16 bg-dark-primary">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto">
                 <h2 class="text-3xl font-bold mb-6">About Roma Game</h2>
@@ -101,7 +120,7 @@
     </section>
 
     <!-- Gameplay Section -->
-    <section id="gameplay" class="py-12 md:py-16 bg-white">
+    <section id="gameplay" class="py-12 md:py-16 bg-dark-secondary">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto">
                 <h2 class="text-3xl font-bold mb-6">Gameplay Experience</h2>
@@ -128,44 +147,44 @@
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="py-12 md:py-16 bg-apple-gray">
+    <section id="features" class="py-12 md:py-16 bg-dark-primary">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-8">Key Features</h2>
             <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-                <div class="bg-white p-6 rounded-lg shadow-sm">
+                <div class="bg-dark-elevated p-6 rounded-lg shadow-md border border-dark">
                     <h3 class="text-xl font-semibold mb-3">Historically Accurate</h3>
-                    <p>Extensively researched environments and characters based on archaeological evidence and historical records.</p>
+                    <p class="text-dark-secondary">Extensively researched environments and characters based on archaeological evidence and historical records.</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm">
+                <div class="bg-dark-elevated p-6 rounded-lg shadow-md border border-dark">
                     <h3 class="text-xl font-semibold mb-3">Immersive Audio</h3>
-                    <p>Authentic soundscapes bring ancient Rome to life with period-appropriate music, ambient sounds, and Latin dialogue.</p>
+                    <p class="text-dark-secondary">Authentic soundscapes bring ancient Rome to life with period-appropriate music, ambient sounds, and Latin dialogue.</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm">
+                <div class="bg-dark-elevated p-6 rounded-lg shadow-md border border-dark">
                     <h3 class="text-xl font-semibold mb-3">Educational Value</h3>
-                    <p>Learn about Roman civilization through engaging interactive content suitable for history enthusiasts of all ages.</p>
+                    <p class="text-dark-secondary">Learn about Roman civilization through engaging interactive content suitable for history enthusiasts of all ages.</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm">
+                <div class="bg-dark-elevated p-6 rounded-lg shadow-md border border-dark">
                     <h3 class="text-xl font-semibold mb-3">Free to Play</h3>
-                    <p>Experience the wonders of ancient Rome without any cost - Roma Game is completely free to play online.</p>
+                    <p class="text-dark-secondary">Experience the wonders of ancient Rome without any cost - Roma Game is completely free to play online.</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm">
+                <div class="bg-dark-elevated p-6 rounded-lg shadow-md border border-dark">
                     <h3 class="text-xl font-semibold mb-3">Regular Updates</h3>
-                    <p>New areas, characters, and activities are added regularly to enhance the gameplay experience.</p>
+                    <p class="text-dark-secondary">New areas, characters, and activities are added regularly to enhance the gameplay experience.</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-sm">
+                <div class="bg-dark-elevated p-6 rounded-lg shadow-md border border-dark">
                     <h3 class="text-xl font-semibold mb-3">Multi-Platform</h3>
-                    <p>Optimized for both desktop and mobile devices so you can explore Rome wherever you go.</p>
+                    <p class="text-dark-secondary">Optimized for both desktop and mobile devices so you can explore Rome wherever you go.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="py-12 md:py-20 bg-apple-blue text-white">
+    <section class="py-12 md:py-20 bg-dark-blue text-white">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-3xl font-bold mb-4">Ready to Experience Ancient Rome?</h2>
             <p class="text-xl mb-8 max-w-2xl mx-auto">Step back in time and walk the streets of history's greatest empire. Roma Game offers an unparalleled historical simulation experience.</p>
-            <a href="#play" class="inline-block bg-white text-apple-blue px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors duration-300">Play Roma Game Now</a>
+            <a href="#play" class="inline-block bg-white text-dark-blue px-6 py-3 rounded-lg font-medium hover:bg-gray-200 transition-colors duration-300">Play Roma Game Now</a>
         </div>
     </section>
 
@@ -175,13 +194,13 @@
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-4 md:mb-0">
                     <p class="text-lg font-bold">Roma Game</p>
-                    <p class="text-apple-darkgray">© 2025 Roma Game. All rights reserved.</p>
+                    <p class="text-dark-secondary">© 2025 Roma Game. All rights reserved.</p>
                 </div>
                 <div>
                     <ul class="flex space-x-6">
-                        <li><a href="#" class="text-apple-darkgray hover:text-white transition-colors duration-300">Privacy Policy</a></li>
-                        <li><a href="#" class="text-apple-darkgray hover:text-white transition-colors duration-300">Terms of Service</a></li>
-                        <li><a href="#" class="text-apple-darkgray hover:text-white transition-colors duration-300">Contact</a></li>
+                        <li><a href="#" class="text-dark-secondary hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="#" class="text-dark-secondary hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="#" class="text-dark-secondary hover:text-white transition-colors duration-300">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -197,10 +216,10 @@
             menuButton.addEventListener('click', function() {
                 if (menuItems.classList.contains('hidden')) {
                     menuItems.classList.remove('hidden');
-                    menuItems.classList.add('block', 'absolute', 'top-16', 'left-0', 'right-0', 'bg-white', 'shadow-lg', 'p-4');
+                    menuItems.classList.add('block', 'absolute', 'top-16', 'left-0', 'right-0', 'bg-dark-secondary', 'shadow-lg', 'p-4', 'border-t', 'border-dark');
                 } else {
                     menuItems.classList.add('hidden');
-                    menuItems.classList.remove('block', 'absolute', 'top-16', 'left-0', 'right-0', 'bg-white', 'shadow-lg', 'p-4');
+                    menuItems.classList.remove('block', 'absolute', 'top-16', 'left-0', 'right-0', 'bg-dark-secondary', 'shadow-lg', 'p-4', 'border-t', 'border-dark');
                 }
             });
         });
